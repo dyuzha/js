@@ -1,5 +1,7 @@
 // 'use strict';
 
+import { assert } from "chai";
+
 describe("pow", () => {
 
   it("возводит в степень n", () => {
