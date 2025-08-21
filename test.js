@@ -1,12 +1,9 @@
 // 'use strict';
 
-/**
- * @param {string} from
- * @param {string} text
- */
-function showMessage(from, text = "No text") {
-    alert(`${from}: ${text}`);
-}
+describe("pow", () => {
 
-showMessage("Anna", "Hi");
-showMessage("Anna");
+  it("возводит в степень n", () => {
+    assert.equal(pow(2, 3), 8);
+  });
+
+});
