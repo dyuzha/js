@@ -1,50 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-
-  <!-- добавим стили mocha для отображения результатов -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
-
- <!-- добавляем сам фреймворк mocha -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
-
-  <script>
-    // включаем режим тестирования в стиле BDD
-    mocha.setup('bdd');
-  </script>
-
-  <!-- добавим chai -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
-
-  <script>
-    //  Объявим assert глобально
-    let assert = chai.assert;
-  </script>
-
-  <!-- <meta charset="UTF-8"> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!---->
-  <!-- <title>Test document</title> -->
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <title>Document</title>
 </head>
 
 <body>
-  <script>
-    function pow(x, n) {
-      return x ** n;
-    };
-  </script>
-
-  <!-- скрипт со спецификацией (describe, it...) -->
-  <script src="test.js"></script>
-
-  <!-- элемент с id="mocha" будет содержать результаты тестов -->
-  <div id="mocha"></div>
-
-  <!-- запускаем тесты! -->
-  <script>
-    mocha.run();
-  </script>
 
 </body>
+
 </html>
