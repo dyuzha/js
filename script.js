@@ -1,13 +1,10 @@
 let user = {
   name: "John",
-  age: 30
+  age: 30,
+  sayHi() {
+    alert(`Hi, my name is ${this.name}`);
+  }
 };
 
-let clone = {};
+user.sayHi()
 
-Object.assign(user, clone)
-
-clone.name = "Vasya";
-
-alert(`user: ${user.name}`); // "John"
-alert(`clone: ${clone.name}`); // "John"
