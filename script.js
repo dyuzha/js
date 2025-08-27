@@ -1,10 +1,11 @@
-let user = {
-  name: "John",
-  age: 30,
-  sayHi() {
-    alert(`Hi, my name is ${this.name}`);
-  }
-};
+// 'use strict'
 
-user.sayHi()
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+}
 
+let user = new User("Jack");
+
+alert(user.name); // Jack
+alert(user.isAdmin); // false
