@@ -1,11 +1,13 @@
-// 'use strict'
+let user = {
+  name: "John",
+  money: 1000,
 
-function User(name) {
-  this.name = name;
-  this.isAdmin = false;
+  [Symbol.toPrimitive](hint) {
+    alert(`hint: ${hint}`);
+    return hint === "string" ? `name: ${this.name}`: this.money;
+  }
 }
 
-let user = new User("Jack");
-
-alert(user.name); // Jack
-alert(user.isAdmin); // false
+alert(user);
+alert(+user);
+alert(user + 50);
